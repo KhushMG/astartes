@@ -1,7 +1,11 @@
 "use client"
 import supabase from "../../utils/supabaseConfig";
 import { useEffect, useState } from "react";
-import AstarteList from "../../components/AstarteList";
+import AstarteList from "../components/AstarteList";
+import { Container } from "@mui/material";
+import Box from "@mui/material/Box";
+
+
 export default function Home() {
   const [astartesList, setAstartesList] = useState([]);
 
@@ -16,12 +20,12 @@ export default function Home() {
     };
 
     fetchData();
-  },[]);
+  }, []);
 
   return (
     <main className="flex">
       <div>
-        <AstarteList astartesList={astartesList}/>
+          <AstarteList astartesList={astartesList} />
       </div>
     </main>
   );
