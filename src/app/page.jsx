@@ -2,8 +2,6 @@
 import supabase from "../../utils/supabaseConfig";
 import { useEffect, useState } from "react";
 import AstarteList from "../components/AstarteList";
-import { Container } from "@mui/material";
-import Box from "@mui/material/Box";
 
 
 export default function Home() {
