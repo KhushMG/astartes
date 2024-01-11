@@ -22,6 +22,7 @@ export default function Home() {
 
   return (
     <main className="flex">
+      <div> Astartes List </div>
       <div>
           <AstarteList astartesList={astartesList} />
       </div>
