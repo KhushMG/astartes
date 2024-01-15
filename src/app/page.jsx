@@ -10,7 +10,10 @@ export default function Home() {
   useEffect(() => {
     // Function to fetch data from Supabase
     const fetchData = async () => {
-      const { data, error } = await supabase.from("astartes").select();
+      const { data, error } = await supabase
+        .from("astartes")
+        .select()
+        .order("allegiance", { ascending: true });
       if (error) { 
         console.log("error fetching data")
       }
@@ -22,7 +25,7 @@ export default function Home() {
 
   return (
     <main className="flex">
-      <div> Astartes List </div>
+      <div className="flex justify-center"> Astartes List </div>
       <div>
           <AstarteList astartesList={astartesList} />
       </div>
