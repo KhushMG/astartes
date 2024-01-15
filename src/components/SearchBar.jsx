@@ -23,19 +23,24 @@ export default function Search({ query }) {
   }, 300);
 
   return (
-    <div className="relative flex flex-1 flex-shrink-0 justify-center">
-      <label htmlFor="search" className="sr-only">
-        Search
-      </label>
-      <input
-        className="block w-[50vh] rounded-md border border-gray-200 py-[9px] pl-10 text-sm text-black outline-2 placeholder:text-gray-500"
-        placeholder={"Search for an Astartes by name"}
-        onChange={(e) => {
-          handleSearch(e.target.value);
-        }}
-        defaultValue={searchParams.get("query")?.toString()}
-      />
-      <MagnifyingGlassIcon className="absolute justify-center -translate-x-[14rem] top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
+    <div className="relative flex flex-1 justify-center">
+      <div className="relative ">
+        <label htmlFor="search" className="sr-only">
+          Search
+        </label>
+        <input
+          id="search"
+          className="block rounded-md border w-[20rem] border-gray-200 py-[9px] pl-10 text-sm text-black outline-2 placeholder:text-gray-500"
+          placeholder="Search for an Astartes by name"
+          onChange={(e) => {
+            handleSearch(e.target.value);
+          }}
+          defaultValue={searchParams.get("query")?.toString()}
+        />
+        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <MagnifyingGlassIcon className="h-5 w-5 text-gray-500" />
+        </div>
+      </div>
     </div>
   );
 }

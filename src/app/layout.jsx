@@ -1,6 +1,9 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { GeistSans } from "geist/font/sans";
+import NavBar from '@/components/NavBar';
+import { Suspense } from 'react';
+import Footer from '@/components/Footer';
 
 
 export const metadata = {
@@ -11,7 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>{children}</body>
+      <Suspense>
+        <body className={GeistSans.className}>
+            <NavBar/>
+          {children}
+          <section id="footer" className="bottom-0">
+            <Footer />
+          </section>
+        </body>
+      </Suspense>
     </html>
   );
 }

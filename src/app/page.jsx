@@ -15,7 +15,7 @@ export default function Home({ searchParams }) {
       let queryBuilder = supabase
         .from("astartes")
         .select()
-        .order("allegiance", { ascending: true });
+        .order("name", { ascending: true });
 
       if (query) {
         queryBuilder = queryBuilder.or(
@@ -38,7 +38,8 @@ export default function Home({ searchParams }) {
   return (
     <main>
       <div className="mt-[2rem]">
-        <SearchBar query={query}/>
+        {/* SearchBar component captures user input*/}  
+        <SearchBar query={query} id="search"/>
       </div>
       <div className="mt-[2rem] mx-[2rem]">
         <AstarteList astartesList={astartesList} />
