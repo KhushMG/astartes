@@ -18,7 +18,9 @@ export default function Home({ searchParams }) {
         .order("allegiance", { ascending: true });
 
       if (query) {
-        queryBuilder = queryBuilder.ilike("name", `%${query}%`); 
+        queryBuilder = queryBuilder.or(
+          `name.ilike.%${query}%,chapter.ilike.%${query}%`
+        );
       }
 
       const { data, error } = await queryBuilder;
