@@ -41,7 +41,7 @@ export default function Home({ searchParams }) {
         {/* SearchBar component captures user input*/}  
         <SearchBar query={query} id="search"/>
       </div>
-      <div className="mt-[2rem] mx-[2rem]">
+      <div className="mt-[2rem] mx-[2rem] px-3">
         <AstarteList astartesList={astartesList} />
       </div>
     </main>

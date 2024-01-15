@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'WH40k Astartes Database',
-  description: 'Search for Astartes by name, rank, or allegiance',
+  description: 'Search for Astartes by name, rank, or allegiance'
 }
 
 export default function RootLayout({ children }) {
