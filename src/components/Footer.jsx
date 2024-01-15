@@ -1,11 +1,13 @@
-import React from "react";
+"use client"
+import {React, useEffect} from "react";
 import { Card, CardBody } from "@nextui-org/react";
 
 export default function Footer() {
+
   return (
-    <>
+    <div>
       <button className="border rounded-md ml-[5rem] p-2 bg-white/30">
-        <a href="#search">Press here to go to top</a>
+        <a href="#search" >Back to top</a>
       </button>
       <Card >
         <CardBody >
@@ -26,6 +28,6 @@ export default function Footer() {
           </p>
         </CardBody>
       </Card>
-    </>
+    </div>
   );
 }
