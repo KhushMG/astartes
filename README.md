@@ -3,7 +3,7 @@ Using this website, a user may search for a certain Astartes by name, chapter, o
 
 <br/>
 - Next.js + React.js <br/>
-- PostgreSQL <br/>
+- PostgreSQL (Supabase) <br/>
 - TailwindCSS <br/>
 - NextUI
 <br/>
