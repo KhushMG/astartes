@@ -1,4 +1,3 @@
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { GeistSans } from "geist/font/sans";
 import NavBar from '@/components/NavBar';

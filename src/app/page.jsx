@@ -19,7 +19,7 @@ export default function Home({ searchParams }) {
 
       if (query) {
         queryBuilder = queryBuilder.or(
-          `name.ilike.%${query}%,chapter.ilike.%${query}%,allegiance.ilike.%${query}`
+          `name.ilike.%${query}%,chapter.ilike.%${query}%,allegiance.ilike.%${query}, rank.ilike.%${query}`
         );
       }
 
