@@ -11,7 +11,7 @@ import {
 
 const NavBar = () => {
   return (
-    <Navbar >
+    <Navbar position="static" className='mt-[1.5rem]'>
       <NavbarBrand>
         <p className="ml-3 sm:absolute sm:-translate-x-[16rem] font-bold text-inherit text-2xl">
           WH40K Astartes Database
@@ -21,7 +21,7 @@ const NavBar = () => {
         className="hidden sm:flex gap-4 translate-x-[8rem]"
         justify="right"
       >
-        <NavbarItem>
+        <NavbarItem >
           <Link color="foreground" href="#footer">
             Disclaimer
           </Link>

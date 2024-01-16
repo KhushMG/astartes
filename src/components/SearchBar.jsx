@@ -28,14 +28,14 @@ export default function Search({ query }) {
         </label>
         <input
           id="search"
-          className="block rounded-md border w-[20rem] border-gray-200 py-[9px] pl-10 text-sm text-black outline-2 placeholder:text-gray-500"
+          className="block mt-[2rem] rounded-md border w-[20rem] border-gray-200 py-[9px] pl-10 text-sm text-black outline-2 placeholder:text-gray-500"
           placeholder="Search for an Astartes by name"
           onChange={(e) => {
             handleSearch(e.target.value);
           }}
           defaultValue={searchParams.get("query")?.toString()}
         />
-        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+        <div className="absolute inset-y-5 mt-[2rem] left-0 pl-3 flex items-center pointer-events-none">
           <MagnifyingGlassIcon className="h-5 w-5 text-gray-500" />
         </div>
       </div>
