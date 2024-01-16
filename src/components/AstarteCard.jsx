@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
+// Card to render individual Astarte.
 const AstarteCard = ({ astarte }) => {
   return (
     <div className="border-[2px] border-white p-8 w-[15rem] max-w-[20rem] rounded-md bg-white/30">

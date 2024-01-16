@@ -1,6 +1,7 @@
 import React from 'react'
 import AstarteCard from './AstarteCard'
 
+// Rendering all astartes. 
 const AstarteList = ({ astartesList }) => {
   return (
     <div className="flex-1 my-[5rem]">

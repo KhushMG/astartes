@@ -8,7 +8,7 @@ import {
   Button,
 } from "@nextui-org/react";
 
-
+{/* A NavBar. */}  
 const NavBar = () => {
   return (
     <Navbar position="static" className='mt-[1.5rem]'>

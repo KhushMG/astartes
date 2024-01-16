@@ -1,9 +1,9 @@
 "use client"
-import {React, useEffect} from "react";
+import {React} from "react";
 import { Card, CardBody } from "@nextui-org/react";
 
+// It's a footer for the website. 
 export default function Footer() {
-
   return (
     <div>
       <button className="border rounded-md ml-[5rem] p-2 bg-white/30">
