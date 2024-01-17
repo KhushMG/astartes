@@ -13,13 +13,13 @@ const NavBar = () => {
   return (
     <Navbar position="static" className='mt-[1.5rem]'>
       <NavbarBrand>
-        <p className="ml-3 sm:absolute sm:-translate-x-[16rem] font-bold text-inherit text-2xl">
+        <p className="ml-3 sm:absolute font-bold text-inherit text-2xl">
           WH40K Astartes Database
         </p>
       </NavbarBrand>
       <NavbarContent
-        className="hidden sm:flex gap-4 translate-x-[8rem]"
-        justify="right"
+        className="hidden sm:flex gap-4 "
+        justify="center"
       >
         <NavbarItem >
           <Link color="foreground" href="#footer">
