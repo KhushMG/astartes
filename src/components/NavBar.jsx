@@ -5,25 +5,51 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@nextui-org/react";
 
 {/* A NavBar. */}  
 const NavBar = () => {
   return (
-    <Navbar position="static" className='mt-[1.5rem]'>
+    <Navbar position="static" className="mt-[1.5rem]">
       <NavbarBrand>
-        <p className="ml-3 sm:absolute font-bold text-inherit text-2xl">
-          WH40K Astartes Database
-        </p>
+        <button>
+          <Link>
+            <p className="ml-3 sm:absolute font-bold text-inherit text-2xl hover:text-white/35 transition ease-in-out duration-100">
+              WH40K Astartes Database
+            </p>
+          </Link>
+        </button>
       </NavbarBrand>
       <NavbarContent
-        className="hidden sm:flex gap-4 "
+        className="hidden sm:flex gap-[1.5rem] mt-[1.25rem] "
         justify="center"
       >
-        <NavbarItem >
-          <Link color="foreground" href="#footer">
-            Disclaimer
+        <NavbarItem>
+          <Link
+            color="foreground"
+            href="/inquisition"
+            className="font-bold hover:text-white/35 transition ease-in-out duration-100"
+          >
+            Imperium&apos;s Highest
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            color="foreground"
+            href="/inquisition"
+            className="font-bold hover:text-white/35 transition ease-in-out duration-100"
+          >
+            Inquisition
+          </Link>
+        </NavbarItem>
+
+        <NavbarItem>
+          <Link
+            color="foreground"
+            href="/disclaimer"
+            className="font-bold text-red-500 hover:text-red-950 transition ease-in-out duration-100"
+          >
+            DISCLAIMER
           </Link>
         </NavbarItem>
       </NavbarContent>

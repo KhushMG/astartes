@@ -17,9 +17,6 @@ export default function RootLayout({ children }) {
         <body className={GeistSans.className}>
             <NavBar/>
           {children}
-          <section id="footer" className="bottom-0">
-            <Footer />
-          </section>
         </body>
       </Suspense>
     </html>
