@@ -27,7 +27,7 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             color="foreground"
-            href="/chapters"
+            href="/"
             className="font-bold hover:text-white/35 transition ease-in-out duration-100"
           >
             Astartes

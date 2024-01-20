@@ -1,7 +1,7 @@
 import './globals.css'
 import { GeistSans } from "geist/font/sans";
-import NavBar from '@/components/NavBar';
 import { Suspense } from 'react';
+import Hamburger from '@/components/Hamburger';
 
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Suspense>
         <body className={GeistSans.className}>
-            <NavBar/>
+          <Hamburger/>
           {children}
         </body>
       </Suspense>
