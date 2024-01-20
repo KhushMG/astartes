@@ -4,7 +4,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
 
-export default function Search({ query }) {
+export default function Search({ query, placeholder }) {
   const searchParams = useSearchParams();
   const pathname = usePathname(); 
   const { replace } = useRouter(); 
@@ -29,7 +29,7 @@ export default function Search({ query }) {
         <input
           id="search"
           className="block mt-[2rem] rounded-md border w-[20rem] border-gray-200 py-[9px] pl-10 text-sm text-black outline-2 placeholder:text-gray-500"
-          placeholder="Search for an Astartes by name"
+          placeholder={`Search for ${placeholder} by name`}
           onChange={(e) => {
             handleSearch(e.target.value);
           }}

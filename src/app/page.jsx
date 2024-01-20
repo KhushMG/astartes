@@ -1,7 +1,7 @@
 "use client"
-import supabase from "../../utils/supabaseConfig";
+import supabase from "@/utils/supabaseConfig";
 import { useEffect, useState } from "react";
-import AstarteList from "../components/AstarteList";
+import AstarteList from "@/components/AstarteList";
 import SearchBar from "@/components/SearchBar";
 
 
@@ -38,11 +38,14 @@ export default function Home({ searchParams }) {
     {/* Dependency array to rerender when data changes */}  
   }, [query]);
 
+
+
+
   return (
     <main>
       <div className="mt-[2rem]">
         {/* SearchBar component captures user input. */}
-        <SearchBar query={query} id="search" />
+        <SearchBar query={query} id="search" placeholder={"an Astartes"}/>
       </div>
       <div className="mt-[2rem] mx-[2rem] px-3">
         {/* Rendering all astartes from database. */}

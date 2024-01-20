@@ -13,9 +13,9 @@ const NavBar = () => {
     <Navbar position="static" className="mt-[1.5rem]">
       <NavbarBrand>
         <button>
-          <Link>
+          <Link href='/'>
             <p className="ml-3 sm:absolute font-bold text-inherit text-2xl hover:text-white/35 transition ease-in-out duration-100">
-              WH40K Astartes Database
+              WH40K Database
             </p>
           </Link>
         </button>
@@ -27,10 +27,10 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             color="foreground"
-            href="/inquisition"
+            href="/chapters"
             className="font-bold hover:text-white/35 transition ease-in-out duration-100"
           >
-            Imperium&apos;s Highest
+            Chapters
           </Link>
         </NavbarItem>
         <NavbarItem>
