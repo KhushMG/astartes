@@ -10,10 +10,10 @@ import {
 {/* A NavBar. */}  
 const NavBar = () => {
   return (
-    <Navbar position="static" className="mt-[1.5rem]">
+    <Navbar isBordered position="static" className="mt-[1.5rem]">
       <NavbarBrand>
         <button>
-          <Link href='/'>
+          <Link href="/">
             <p className="ml-3 sm:absolute font-bold text-inherit text-2xl hover:text-white/35 transition ease-in-out duration-100">
               WH40K Database
             </p>
@@ -24,6 +24,15 @@ const NavBar = () => {
         className="hidden sm:flex gap-[1.5rem] mt-[1.25rem] "
         justify="center"
       >
+        <NavbarItem>
+          <Link
+            color="foreground"
+            href="/chapters"
+            className="font-bold hover:text-white/35 transition ease-in-out duration-100"
+          >
+            Astartes
+          </Link>
+        </NavbarItem>
         <NavbarItem>
           <Link
             color="foreground"
