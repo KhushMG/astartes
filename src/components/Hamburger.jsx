@@ -98,6 +98,15 @@ const Hamburger = () => {
             Inquisition
           </Link>
         </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            color="foreground"
+            href="/inquisition"
+            className="font-bold text-red-500 hover:text-white/35 transition ease-in-out duration-100"
+          >
+            DISCLAIMER
+          </Link>
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
