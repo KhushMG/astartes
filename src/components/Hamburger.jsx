@@ -72,7 +72,7 @@ const Hamburger = () => {
         <NavbarItem>
           <Link
             color="foreground"
-            href="/inquisition"
+            href="/disclaimer"
             className="font-bold hover:text-red-500/40 text-red-500 transition ease-in-out duration-100"
           >
             DISCLAIMER
