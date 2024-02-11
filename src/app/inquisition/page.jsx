@@ -1,7 +1,11 @@
 import React from 'react'
 
 const InquisitionPage = () => {
-  return <div>InquisitionPage</div>;
+  return (
+  <div className='flex justify-center mt-[2rem]'>
+    InquisitionPage
+  </div>
+  );
 }
 
 export default InquisitionPage;
